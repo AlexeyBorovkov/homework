@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/back.jpg), lightgray 50%/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1440px;
+  height: 1024px;
+  padding-top: 217px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 493px;
+}
+.header__box {
+  margin-bottom: 35px;
+}
+.header__box-heading {
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  width: 788.778px;
+  height: 125.007px;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__box-text {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  width: 481px;
+}
+.header__box-button {
+  width: 234.063px;
+  height: 48.603px;
+  border-radius: 30px;
+  background: #9C0332;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFF;
+  font-family: inherit;
+}
+.header__box-button:hover {
+  cursor: url(img/cursor.svg), pointer;
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+span {
+  font-weight: 700;
+}
+
+.footer {
+  width: 1440px;
+  height: 556px;
+  background: #000915;
+}
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+.footer__link-box {
+  display: inline;
+}
+.footer__link-img:hover {
+  cursor: url(img/cursor.svg), pointer;
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/mobback.jpg), lightgray 50%/cover no-repeat;
+    width: 375px;
+    height: 735px;
+  }
+  .header__box-heading {
+    width: 343px;
+    height: 77.436px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .header__box-text {
+    width: 343px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .header__box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer {
+    width: 375px;
+    height: 1221px;
+  }
+  .footer__link-img {
+    width: 343px;
+  }
+}
+
