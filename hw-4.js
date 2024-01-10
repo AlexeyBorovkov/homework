@@ -62,27 +62,28 @@ for (let i = 0; i <= 10; i++) {
   console.log(cubeNumber(i));
 }
 //Задание 7
+function getCircleArea() {
+  return Math.PI * this.radius ** 2;
+}
+function getCirclePerimeter() {
+  return 2 * Math.PI * this.radius;
+}
+
 const circle1 = {
   radius: 5,
-  getArea: function() {
-      return Math.PI * this.radius ** 2;
-  },
-  getPerimeter: function() {
-      return 2 * Math.PI * this.radius;
-  }
+  getArea: getCircleArea,
+  getPerimeter: getCirclePerimeter,
+ 
 }
 const circle2 = {
   radius: 8,
-  getArea: function() {
-      return Math.PI * this.radius ** 2;
-  },
-  getPerimeter: function() {
-      return 2 * Math.PI * this.radius;
-  }
+  getArea: getCircleArea,
+  getPerimeter: getCirclePerimeter,
+ 
+ 
 }
-console.log("Площадь круга circle1:", circle1.getArea());
-console.log("Периметр окружности circle1:", circle1.getPerimeter());
-
-console.log("Площадь круга circle2:", circle2.getArea());
-console.log("Периметр окружности circle2:", circle2.getPerimeter());  
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
 

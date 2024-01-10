@@ -18,7 +18,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1440px;
   height: 1024px;
   padding-top: 217px;
   padding-left: 120px;
@@ -72,7 +71,6 @@ span {
 }
 
 .game {
-  width: 1440px;
   height: 556px;
   background: #000915;
 }
@@ -93,7 +91,6 @@ span {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 .footer {
-  width: 1440px;
   height: 800px;
   background: #000915;
   display: flex;
