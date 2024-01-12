@@ -18,7 +18,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1440px;
   height: 1024px;
   padding-top: 217px;
   padding-left: 120px;
@@ -71,27 +70,74 @@ span {
   font-weight: 700;
 }
 
-.footer {
-  width: 1440px;
+.game {
   height: 556px;
   background: #000915;
 }
-.footer__link {
+.game__link {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
 }
-.footer__link-box {
+.game__link-box {
   display: inline;
 }
-.footer__link-img:hover {
+.game__link-img:hover {
   cursor: url(img/cursor.svg), pointer;
   border-radius: 16px;
   border: 3px solid #44D2FF;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
+.footer {
+  height: 800px;
+  background: #000915;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__box-heading {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #FFF;
+}
+.footer__box-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  color: #FFF;
+  width: 584px;
+}
+.footer__box-button {
+  width: 234.063px;
+  height: 48.603px;
+  border-radius: 30px;
+  background: #9C0332;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFF;
+  font-family: inherit;
+}
+.footer__box-button:hover {
+  cursor: url(img/cursor.svg), pointer;
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.footer__box {
+  margin-bottom: 32px;
+}
+.footer__image {
+  width: 485px;
+  height: 333px;
+}
+
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -123,12 +169,39 @@ span {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .footer {
+  .game {
     width: 375px;
     height: 1221px;
   }
-  .footer__link-img {
+  .game__link-img {
     width: 343px;
+  }
+  .footer {
+    width: 375px;
+    height: 653.61px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__box-heading {
+    font-size: 32px;
+    text-align: center;
+  }
+  .footer__box-text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    width: 343px;
+  }
+  .footer__box {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__container {
+    margin-bottom: 35px;
+  }
+  .footer__image {
+    width: 344px;
+    height: 236px;
   }
 }
 
