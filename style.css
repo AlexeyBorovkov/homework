@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -70,40 +71,40 @@ span {
   font-weight: 700;
 }
 
-.game {
+.menu {
   height: 556px;
   background: #000915;
 }
-.game__link {
+.menu__link {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
 }
-.game__link-box {
+.menu__link-box {
   display: inline;
 }
-.game__link-img:hover {
+.menu__link-img:hover {
   cursor: url(img/cursor.svg), pointer;
   border-radius: 16px;
   border: 3px solid #44D2FF;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
-.footer {
+.game {
   height: 800px;
   background: #000915;
   display: flex;
   justify-content: space-between;
 }
-.footer__box-heading {
+.game__box-heading {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   color: #FFF;
 }
-.footer__box-text {
+.game__box-text {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -111,7 +112,7 @@ span {
   color: #FFF;
   width: 584px;
 }
-.footer__box-button {
+.game__box-button {
   width: 234.063px;
   height: 48.603px;
   border-radius: 30px;
@@ -123,29 +124,77 @@ span {
   color: #FFF;
   font-family: inherit;
 }
-.footer__box-button:hover {
+.game__box-button:hover {
   cursor: url(img/cursor.svg), pointer;
   border-radius: 16px;
   border: 3px solid #44D2FF;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
-.footer__box {
+.game__box {
   margin-bottom: 32px;
 }
-.footer__image {
+.game__image {
+  width: 485px;
+  height: 333px;
+}
+.gameTwo {
+  height: 800px;
+  background: #000915;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.gameTwo__box-heading {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #FFF;
+}
+.gameTwo__box-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  color: #FFF;
+  width: 584px;
+}
+.gameTwo__box-button {
+  width: 234.063px;
+  height: 48.603px;
+  border-radius: 30px;
+  background: #9C0332;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFF;
+  font-family: inherit;
+}
+.gameTwo__box-button:hover {
+  cursor: url(img/cursor.svg), pointer;
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.gameTwo__box {
+  margin-bottom: 32px;
+}
+.gameTwo__image {
   width: 485px;
   height: 333px;
 }
 
 
-@media (max-width: 767px) {
+
+@media (min-width: 374px) and (max-width: 768px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
   .header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/mobback.jpg), lightgray 50%/cover no-repeat;
-    width: 375px;
+    
     height: 735px;
   }
   .header__box-heading {
@@ -169,39 +218,71 @@ span {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .game {
-    width: 375px;
+  .menu {
     height: 1221px;
   }
-  .game__link-img {
+  .menu__link-img {
     width: 343px;
   }
-  .footer {
-    width: 375px;
+  .game {
+    
     height: 653.61px;
     display: flex;
     flex-direction: column;
   }
-  .footer__box-heading {
+  .game__box-heading {
     font-size: 32px;
     text-align: center;
   }
-  .footer__box-text {
+  .game__box-text {
     font-size: 14px;
     line-height: 22px;
     text-align: center;
     width: 343px;
   }
-  .footer__box {
+  .game__box {
     display: flex;
     justify-content: center;
   }
-  .footer__container {
+  .game__container {
     margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
   }
-  .footer__image {
+  .game__image {
+    width: 344px;
+    height: 236px;
+  }
+  .gameTwo {
+    
+    height: 653.61px;
+    display: flex;
+    flex-direction: column;
+  }
+  .gameTwo__box-heading {
+    font-size: 32px;
+    text-align: center;
+  }
+  .gameTwo__box-text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    width: 343px;
+  }
+  .game__box-button {
+    
+  }
+  .gameTwo__box {
+    display: flex;
+    justify-content: center;
+  }
+  .gameTwo__container {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+  }
+  .gameTwo__image {
     width: 344px;
     height: 236px;
   }
 }
-

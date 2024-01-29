@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="hw-1.js"></script>
+    <script src="hw-6.js"></script>
     <title>Homework1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,42 +24,60 @@
         </div>
 
     </section>
-    <section class="game">
-        <div class="game__link">
-            <div class="game__link-box">
+    <section class="menu center">
+        <div class="menu__link">
+            <div class="menu__link-box">
                 <a href="#">
-                    <img class="game__link-img" src="img/game1.jpg" width="378px" height="300px">
+                    <img class="menu__link-img" src="img/game1.jpg" width="378px" height="300px">
                   </a>
             </div>
-            <div class="game__link-box">
+            <div class="menu__link-box">
                 <a href="#">
-                    <img class="game__link-img" src="img/game2.jpg" width="378px" height="300px">
+                    <img class="menu__link-img" src="img/game2.jpg" width="378px" height="300px">
                   </a>
             </div>
-            <div class="game__link-box">
+            <div class="menu__link-box">
                 <a href="#">
-                    <img class="game__link-img" src="img/game3.jpg" width="378px" height="300px">
+                    <img class="menu__link-img" src="img/game3.jpg" width="378px" height="300px">
                   </a>
             </div>
         </div>
     </section >
-    <footer class="footer center">
-        <div class="footer__content">
-            <div class="footer__box">
-                <h1 class="footer__box-heading">Времена года!</h1>
+    <section class="game center">
+        <div class="game__content">
+            <div class="game__box">
+                <h1 class="game__box-heading">Времена года!</h1>
             </div>
-            <div class="footer__box">
-                <p class="footer__box-text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <div class="game__box">
+                <p class="game__box-text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
             </div>
-            <div class="footer__box">
-                <button class="footer__box-button">Играть</button>
+            <div class="game__box">
+                <button class="game__box-button">Играть</button>
             </div>
         </div>
-        <div class="footer__container">
-            <img class="footer__image" src="img/picture.png" alt="">
+        <div class="game__container">
+            <img class="game__image" src="img/picture.png" alt="">
         </div>
 
-    </footer>
+    </section>
+    <section class="gameTwo center">
+        <div class="gameTwo__content">
+            <div class="gameTwo__box">
+                <h1 class="game__box-heading">Запомни слова</h1>
+            </div>
+            <div class="gameTwo__box">
+                <p class="gameTwo__box-text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            </div>
+            <div class="gameTwo__box">
+                <button onclick="shuffleArray()" class="gameTwo__box-button">Играть</button>
+            </div>
+        </div>
+        <div class="gameTwo__container">
+            <img class="gameTwo__image" src="img/picture2.png" alt="">
+        </div>
+
+    </section>
+ 
 </body>
 
 </html>
